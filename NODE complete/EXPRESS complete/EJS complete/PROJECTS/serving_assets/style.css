@@ -1,0 +1,162 @@
+:root {
+    --bgColor: #000000;
+    --bgHeader: #14140e;
+    --bashSky: #06a187e5;
+    --bashPurple: #a80dbde5;
+    --bashGreen: #00bd3fe5;
+    --bashYellow: #f1e423e5;
+    --bashBlue: #3c8dade5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "head" "main" "foot";
+    background-color: var(--bgColor);
+    font-size: 0.8rem;
+}
+
+body header {
+    display: flex;
+    justify-content: center;
+    height: 8cap;
+    grid-area: head;
+}
+
+body main {
+    grid-area: main;
+}
+
+body footer {
+    grid-area: footer;
+}
+
+body main div.main {
+    display: grid;
+    grid-template-areas: "programming side"
+        "development side"
+        "interface-less side"
+        "dataScience side"
+        "academics academics"
+    ;
+}
+
+body header div.head {
+    display: flex;
+    justify-content: center;
+}
+
+body header,
+body header div.head,
+body header div.head div.headFirstChild {
+    background-color: var(--bgHeader);
+
+}
+
+body header div.head div.headFirstChild {
+    display: grid;
+    grid-template-areas: "Programming Development Interface-less DataScience Academics";
+    column-gap: calc(10vw/5);
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--bashPurple);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+body header div.head div.headFirstChild div.nav {
+    box-shadow: 0.02em 0.02em .5vh -.1vh var(--bashYellow), inset -0.02em -0.02em .5vh -.1vw var(--bashPurple);
+    background-color: var(--bgColor);
+    padding: 1vh 0.8vw 1vh;
+    border-radius: 1.5vh 1.5vw;
+}
+
+body header div.head div.headFirstChild div#firsNav {
+    grid-area: Programming;
+}
+
+body header div.head div.headFirstChild div#secondNav {
+    grid-area: Development;
+}
+
+body header div.head div.headFirstChild div#thirdNav {
+    grid-area: Interface-less;
+}
+
+body header div.head div.headFirstChild div#fourthNav {
+    grid-area: DataScience;
+}
+
+body header div.head div.headFirstChild div#fifthNav {
+    grid-area: Academics;
+}
+
+body main div.main div.mfc_1 {
+    grid-area: programming;
+}
+
+body main div.main div.mfc_2 {
+    grid-area: development;
+}
+
+body main div.main div.mfc_3 {
+    grid-area: interface-less;
+}
+
+body main div.main div.mfc_4 {
+    grid-area: dataScience;
+}
+
+body main div.main div.mfc_1::first-line,
+body main div.main div.mfc_2::first-line,
+body main div.main div.mfc_3::first-line,
+body main div.main div.mfc_4::first-line,
+body main div.main div.mfc_5::first-line {
+    /* box-shadow: -0.05em 0.01em 0.6em .18em var(--bashYellow); */
+}
+
+body main div.main div.mfc_1,
+body main div.main div.mfc_2,
+body main div.main div.mfc_3,
+body main div.main div.mfc_4 {
+    padding: calc(5vh/4) calc(5vh/4);
+    color: var(--bashGreen);
+
+}
+
+body main div.main div.mfc_5 {
+    grid-area: academics;
+    padding: calc(5vh/4) calc(5vh/4);
+    color: var(--bashGreen);
+}
+
+body main div.main div.mainSecondChild {
+    grid-area: side;
+}
+
+body main div.main span.mfc {
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+
+body main div.main div.mfc_1 span#mfcc_1,
+body main div.main div.mfc_2 span#mfcc_2,
+body main div.main div.mfc_3 span#mfcc_3,
+body main div.main div.mfc_4 span#mfcc_4,
+body main div.main div.mfc_5 span#mfcc_5 {
+    box-shadow: 0 0.01em 0.2em .01px #fd0000ee;
+    color: var(--bashPurple);
+}
+
+body main div.main div.mfc_1 span#mfccc_1,
+body main div.main div.mfc_2 span#mfccc_2,
+body main div.main div.mfc_3 span#mfccc_3,
+body main div.main div.mfc_4 span#mfccc_4,
+body main div.main div.mfc_5 span#mfccc_5 {
+    color: var(--bashBlue);
+}

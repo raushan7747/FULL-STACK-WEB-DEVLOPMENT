@@ -1,0 +1,17 @@
+{
+    "Raushan": {
+        "Name": "Raushan",
+        "Year": "2nd",
+        "Course": "BCA"
+    },
+    "Anuj": {
+        "Name": "Anuj",
+        "Year": "3rd",
+        "Course": "BBA"
+    },
+    "Rohan": {
+        "Name": "Rohan",
+        "Year": "Passed",
+        "Course": "Diploma"
+    }
+}

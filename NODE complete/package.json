@@ -1,0 +1,16 @@
+{
+  "name": "allpackages",
+  "version": "1.0.0",
+  "description": "Contains whole packages/modules for the learning purpose only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raushan Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,69 @@
+:root {
+    --bgColor: #000000;
+    --bgHeader: #14140e;
+    --bgMain: #ffffff;
+    --bgFooter: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bgColor);
+}
+
+body header {
+    width: 100vw;
+    height: calc(100vh/6);
+}
+
+body header,
+body header div.head,
+body header div.head div.headFirstChild {
+    background-color: var(--bgHeader);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body header div.head div.headFirstChild {
+    display: grid;
+    position: relative;
+    left: 3vw;
+    color: #ffffff;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80vw;
+}
+body header div.head div.headFirstChild div.nav{
+    background-color: var(--bgColor);
+    width: 10vw;
+    padding-left: 1.8vw;
+    padding-top: 1vh;
+    padding-bottom: .6vh;
+    border-radius: 1.5vh 1.5vw;
+}
+body main,
+body main div.main,
+body main div.main div.mainFirstChild {
+    width: 40vw;
+    height: 80vh;
+    color: #00ff00;
+}
+
+body main div.main div.mainSecondChild {
+    height: inherit;
+    width: 60vw;
+    position: relative;
+    left: 40vw;
+    top: -80vh;
+}
+
+body main div.main div.mainSecondChild img#profileImage {
+    width: 60vw;
+    height: 80vh;
+}
